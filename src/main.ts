@@ -21,6 +21,6 @@ new Vue({
   el: '#app-main',
   router: createRouter(),
   components: {
-    
+    // there were common stuff betweeen
   }
 })
