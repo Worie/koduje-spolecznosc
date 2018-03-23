@@ -8,7 +8,7 @@ export interface ApplicationState {
 
 const applicationModule: Vuex.Module<ApplicationState, IStoreRootState> = {
   state: {
-    test: 'initial',
+    test: '',
   },
   mutations: {
     /**
@@ -16,7 +16,7 @@ const applicationModule: Vuex.Module<ApplicationState, IStoreRootState> = {
      * @param state 
      * @param payload 
      */
-    SET_TEST_STATE(state: ApplicationState, payload: { test }) {
+    SET_TEST_STATE(state: ApplicationState, payload: { test: string }) {
       state.test = payload.test;
     },
   },

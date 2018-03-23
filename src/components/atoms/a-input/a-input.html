@@ -1,1 +1,8 @@
-<input class="newsletter-input email " type="email" placeholder="Twój Adress E-mail" name="EMAIL" id="mce-EMAIL">
+<input 
+  class="newsletter-input email" 
+  type="email" 
+  placeholder="Twój Adress E-mail" 
+  name="EMAIL"
+  v-model="test"
+  @keyup="handleKeyUp"
+  id="mce-EMAIL">

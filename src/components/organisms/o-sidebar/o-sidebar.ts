@@ -6,7 +6,7 @@ import mNewsletter from '../../molecules/m-newsletter'
   name: 'o-sidebar',
   template: require('./o-sidebar.html'),
   components: {
-    mNewsletter
+    mNewsletter,
   }
 })
 export class oSidebar extends Vue {
