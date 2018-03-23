@@ -2,6 +2,9 @@ import Vue from 'vue'
 import { makeHot, reload } from './util/hot-reload'
 import { createRouter } from './router'
 
+import PortalVue from 'portal-vue';
+Vue.use(PortalVue);
+
 // const navbarComponent = () => import('./components/navbar').then(({ NavbarComponent }) => NavbarComponent)
 // const navbarComponent = () => import(/* webpackChunkName: 'navbar' */'./components/navbar').then(({ NavbarComponent }) => NavbarComponent)
 
