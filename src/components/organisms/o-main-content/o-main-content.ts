@@ -1,6 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 
-// terrible - path should always be absolute 
+// terrible - path should always be absolute
 import oSidebar from '../../organisms/o-sidebar'
 
 import './o-main-content.scss'
@@ -13,5 +13,5 @@ import './o-main-content.scss'
   }
 })
 export class oMainContent extends Vue {
- 
+
 }
