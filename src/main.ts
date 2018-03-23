@@ -2,7 +2,10 @@ import Vue from 'vue'
 import { makeHot, reload } from './util/hot-reload'
 import { createRouter } from './router'
 
+import store from './store/store';
+
 import PortalVue from 'portal-vue';
+
 Vue.use(PortalVue);
 
 // const navbarComponent = () => import('./components/navbar').then(({ NavbarComponent }) => NavbarComponent)
@@ -22,6 +25,7 @@ if (process.env.ENV === 'development' && module.hot) {
 // tslint:disable-next-line:no-unused-expression
 new Vue({
   el: '#app-main',
+  store,
   router: createRouter(),
   components: {
     // there were common stuff betweeen
