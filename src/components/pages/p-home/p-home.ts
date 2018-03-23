@@ -1,6 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 
-// terrible - path should always be absolute 
+// terrible - path should always be absolute
 import oTopbar from '../../organisms/o-topbar'
 import oFooter from '../../organisms/o-footer'
 import oMainContent from '../../organisms/o-main-content'
@@ -17,5 +17,5 @@ import './p-home.scss'
   }
 })
 export class pHome extends Vue {
- 
+
 }
