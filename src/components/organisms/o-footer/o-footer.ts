@@ -8,5 +8,5 @@ import './o-footer.scss'
   }
 })
 export class oFooter extends Vue {
- 
+
 }
