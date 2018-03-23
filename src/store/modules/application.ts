@@ -3,12 +3,14 @@ import * as Vuex from 'vuex';
 import { IStoreRootState } from '../store';
 
 export interface ApplicationState {
-  test: string;
+  cardFilter: string;
+  typeFilter: string | null;
 }
 
 const applicationModule: Vuex.Module<ApplicationState, IStoreRootState> = {
   state: {
-    test: '',
+    cardFilter: '',
+    typeFilter: null,
   },
   mutations: {
     /**
@@ -16,21 +18,30 @@ const applicationModule: Vuex.Module<ApplicationState, IStoreRootState> = {
      * @param state 
      * @param payload 
      */
-    SET_TEST_STATE(state: ApplicationState, payload: { test: string }) {
-      state.test = payload.test;
+    SET_CARD_FILTER(state: ApplicationState, payload: { cardFilter: string }) {
+      state.cardFilter = payload.cardFilter;
+    },
+    SET_TYPE_FILTER(state: ApplicationState, payload: { typeFilter: string }) {
+      state.typeFilter = payload.typeFilter;
     },
   },
   getters: {
-    test(state) {
-      return state.test;
+    cardFilter(state) {
+      return state.cardFilter;
+    },
+    typeFilter(state) {
+      return state.typeFilter;
     }
   },
   actions: {
     /**
      * 
      */
-    setTest(context, payload: { test: string }) {
-      context.commit('SET_TEST_STATE', payload);
+    setCardFilter(context, payload: { cardFilter: string }) {
+      context.commit('SET_CARD_FILTER', payload);
+    },
+    setTypeFilter(context, payload: { typeFilter: string }) {
+      context.commit('SET_TYPE_FILTER', payload);
     },
   },
 }

@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import { makeHot, reload } from './util/hot-reload'
 import { createRouter } from './router'
+import './types';
 
-import store from './store/store';
+import store, { IStoreRootState } from './store/store';
 
 import PortalVue from 'portal-vue';
 

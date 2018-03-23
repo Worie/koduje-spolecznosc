@@ -1,0 +1,27 @@
+.tags {
+  display:flex;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  line-height: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags li {
+  margin: 0 30px 0 0;
+  font-size: 16px;
+}
+
+.tags li a {
+  color: #696e9e;
+}
+
+.tags li::before {
+  content: '# ';
+  color: lightgray;
+}

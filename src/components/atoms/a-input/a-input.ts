@@ -9,20 +9,20 @@ import './a-input.scss'
   props: {
     example: {
       type: String,
-      required: true,
+      required: false,
       default: 'text',
     },
   }
 })
 export class aInput extends Vue {
-  
-  get test(): string {
-    return this.$store.getters.test;
+    
+  get cardFilter(): string {
+    return this.$store.getters.cardFilter;
   }
 
-  set test(newValue: string) {
-    this.$store.dispatch('setTest', {
-      test: newValue,
+  set cardFilter(newValue: string) {
+    this.$store.dispatch('setCardFilter', {
+      cardFilter: newValue,
     });
   }
 
