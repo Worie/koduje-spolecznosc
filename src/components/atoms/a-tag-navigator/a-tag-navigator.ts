@@ -25,23 +25,11 @@ import './a-tag-navigator.scss'
   }
 })
 export class aTagNavigator extends Vue {
- get name(): string {
-   return this.$props.name;
- }
-
- get url(): string {
-   return this.$props.url;
- }
- 
- get value(): string {
-   return this.$props.value;
- }
-
  public handleTagClick(): void {
    // do stuff here
    // related to router etc
    this.$store.dispatch('setTypeFilter', {
-     typeFilter: this.value,
+     typeFilter: this.$props.value,
    })
  }
 }

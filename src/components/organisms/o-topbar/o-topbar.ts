@@ -6,7 +6,7 @@ import aInput from '../../atoms/a-input'
   name: 'o-topbar',
   template: require('./o-topbar.html'),
   components: {
-    aInput
+    aInput,
   }
 })
 export class oTopbar extends Vue {

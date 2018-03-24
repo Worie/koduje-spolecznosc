@@ -15,7 +15,6 @@ import './a-input.scss'
   }
 })
 export class aInput extends Vue {
-    
   get cardFilter(): string {
     return this.$store.getters.cardFilter;
   }
@@ -24,9 +23,5 @@ export class aInput extends Vue {
     this.$store.dispatch('setCardFilter', {
       cardFilter: newValue,
     });
-  }
-
-  public handleKeyUp(ev: KeyboardEvent): void {
-    // do stuff here if you want
   }
 }
