@@ -3,7 +3,7 @@
     <o-sidebar />
     <ul class="tags desktop-only">
       <li v-for="tag in tags">
-        <a-tag-navigator 
+        <a-tag-navigator
           :name="tag.name"
           :value="tag.value"
           :url="tag.url" />
@@ -11,7 +11,7 @@
     </ul>
     <div class="main-content">
       <template v-for="card in filteredEntries">
-        <a-card :data="card"/>       
+        <a-card :data="card"/>
       </template>
     </div>
   </div>

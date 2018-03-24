@@ -106,9 +106,9 @@ export class oMainContent extends Vue {
     }
 
     if (
-      (cardFilter === '' && (!typeFilter  || typeFilter == 'all')) || 
+      (cardFilter === '' && (!typeFilter  || typeFilter == 'all')) ||
       card.content.includes(cardFilter) ||
-      card.keywords.indexOf(cardFilter) > -1 
+      card.keywords.indexOf(cardFilter) > -1
     ) {
       return true;
     }
