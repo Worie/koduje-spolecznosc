@@ -1,47 +1,16 @@
 <section class="nav-panel">
   <div class="">
     <nav>
-      <ul>
-        <li class="no-desktop">
-          <a href="#" class='tag-icon'>
-          </a>
-        </li>
-        <li class='active'>
-          <a href="#" class='menu-item star-icon'>
-            <span>Najnowsze</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item book-icon'>
-            <span>Książki</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item education-icon'>
-            <span>Źródła</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item cool-guy-icon'>
-            <span>Cool People</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item handshake-icon'>
-            <span>Meet js</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item globe-icon'>
-            <span>Konferencje</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class='menu-item video-icon'>
-            <span>Video</span>
-          </a>
-        </li>
-      </ul>
+      <m-nav-item
+        :href="'#'"
+        :content="'Kotek'"/>
+      <m-nav-item
+        :href="'#'"
+        :liClass="'active'"
+        :content="'Ślimak'"/>
+      <m-nav-item
+        :href="'#'"
+        :content="'Czapla'"/>
     </nav>
     <m-newsletter />
   </div>
