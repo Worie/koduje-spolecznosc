@@ -16,6 +16,11 @@ import './a-tag-navigator.scss'
       type: String,
       required: true,
       default: '',
+    },
+    url: {
+      type: String,
+      required: false,
+      default: '#',
     }
   }
 })
@@ -25,7 +30,7 @@ export class aTagNavigator extends Vue {
  }
 
  get url(): string {
-   return '#';
+   return this.$props.url;
  }
  
  get value(): string {
