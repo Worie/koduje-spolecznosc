@@ -1,14 +1,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './o-sidebar.scss'
 import mNewsletter from '../../molecules/m-newsletter'
-import mNavItem from '../../molecules/m-nav-item'
+import aNavItem from '../../atoms/a-nav-item'
 
 @Component({
   name: 'o-sidebar',
   template: require('./o-sidebar.html'),
   components: {
     mNewsletter,
-    mNavItem,
+    aNavItem,
   }
 })
 export class oSidebar extends Vue {

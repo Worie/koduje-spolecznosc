@@ -1,16 +1,25 @@
 <section class="nav-panel">
   <div class="">
     <nav>
-      <m-nav-item
-        :href="'#'"
-        :content="'Kotek'"/>
-      <m-nav-item
-        :href="'#'"
-        :liClass="'active'"
-        :content="'Ślimak'"/>
-      <m-nav-item
-        :href="'#'"
-        :content="'Czapla'"/>
+      <ul>
+        <li class="no-desktop">
+          <a href="#" class='tag-icon'>
+          </a>
+        </li>
+        <li class="active">
+          <a-nav-item
+          :iconName="'star-icon'"
+          :content="'Foo'"
+          :href="'#'" />
+        </li>
+        <li class="">
+          <a-nav-item
+          :iconName="'star-icon'"
+          :content="'Bar'"
+          :href="'#'" />
+        </li>
+      </ul>
+
     </nav>
     <m-newsletter />
   </div>

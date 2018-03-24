@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
-import './m-nav-item.scss'
+import './a-nav-item.scss'
 
 @Component({
-  name: 'm-nav-item',
-  template: require('./m-nav-item.html'),
+  name: 'a-nav-item',
+  template: require('./a-nav-item.html'),
   components: {
   },
   props: {
@@ -15,12 +15,12 @@ import './m-nav-item.scss'
       required: true,
       type: String,
     },
-    liClass: {
+    iconName: {
       required: true,
       type: String,
     },
   }
 })
-export class mNavItem extends Vue {
+export class aNavItem extends Vue {
 
 }
