@@ -1,0 +1,24 @@
+nav ul .active::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0px;
+  height: 62px;
+  width: 10px;
+  background-color: #34b399;
+}
+
+nav ul .active::after{
+  content: '';
+  position: absolute;
+  display: block;
+  right: -30px;
+  height: 30px;
+  width: 30px;
+  margin-top: -30px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #696e9e;
+  background-color: transparent;
+  box-sizing: border-box;
+}

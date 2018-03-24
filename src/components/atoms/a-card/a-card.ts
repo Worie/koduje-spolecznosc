@@ -14,7 +14,7 @@ import './a-card.scss'
   }
 })
 export class aCard extends Vue {
-  
+
   get card(): ICard {
     return this.$props.data;
   }
