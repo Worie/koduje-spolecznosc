@@ -5,7 +5,7 @@ import aNavItem from '../../atoms/a-nav-item'
 
 @Component({
   name: 'o-sidebar',
-  template: require('./o-sidebar.html'),
+  template: './o-sidebar.html',
   components: {
     mNewsletter,
     aNavItem,

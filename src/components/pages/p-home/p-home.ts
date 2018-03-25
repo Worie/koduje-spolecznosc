@@ -17,5 +17,5 @@ import './p-home.scss'
   }
 })
 export class pHome extends Vue {
-
+  
 }

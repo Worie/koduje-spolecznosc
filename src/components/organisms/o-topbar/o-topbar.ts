@@ -4,7 +4,7 @@ import aInput from '../../atoms/a-input'
 
 @Component({
   name: 'o-topbar',
-  template: require('./o-topbar.html'),
+  template: './o-topbar.html',
   components: {
     aInput
   }

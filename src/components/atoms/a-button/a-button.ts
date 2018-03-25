@@ -3,7 +3,7 @@ import './a-button.scss'
 
 @Component({
   name: 'a-button',
-  template: require('./a-button.html'),
+  template: './a-button.html',
   components: {
   },
   props: {

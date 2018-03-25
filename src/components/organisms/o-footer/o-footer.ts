@@ -3,7 +3,7 @@ import './o-footer.scss'
 
 @Component({
   name: 'o-footer',
-  template: require('./o-footer.html'),
+  template: './o-footer.html',
   components: {
   }
 })

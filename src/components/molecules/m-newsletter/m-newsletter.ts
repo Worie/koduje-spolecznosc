@@ -5,7 +5,7 @@ import aButton from '../../atoms/a-button'
 
 @Component({
   name: 'm-newsletter',
-  template: require('./m-newsletter.html'),
+  template: './m-newsletter.html',
   components: {
     aInput,
     aButton,

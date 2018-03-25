@@ -3,7 +3,7 @@ import './a-card.scss'
 
 @Component({
   name: 'a-card',
-  template: require('./a-card.html'),
+  template: './a-card.html',
   components: {
   },
   props: {

@@ -3,7 +3,7 @@ import './a-tag-navigator.scss'
 
 @Component({
   name: 'a-tag-navigator',
-  template: require('./a-tag-navigator.html'),
+  template: './a-tag-navigator.html',
   components: {
   },
   props: {

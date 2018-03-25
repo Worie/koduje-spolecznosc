@@ -3,7 +3,7 @@ import './a-input.scss'
 
 @Component({
   name: 'a-input',
-  template: require('./a-input.html'),
+  template: './a-input.html',
   components: {
   },
   props: {

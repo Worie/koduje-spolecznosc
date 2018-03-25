@@ -3,7 +3,7 @@ import './a-nav-item.scss'
 
 @Component({
   name: 'a-nav-item',
-  template: require('./a-nav-item.html'),
+  template: '<div>cddddd</div>',
   components: {
   },
   props: {
