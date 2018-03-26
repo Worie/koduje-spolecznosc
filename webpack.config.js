@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
+        loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/],
@@ -32,6 +32,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(html)$/,
+        loader: 'html-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
