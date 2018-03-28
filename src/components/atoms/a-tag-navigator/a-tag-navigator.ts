@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './a-tag-navigator.scss'
+import template from './a-tag-navigator.html'
 
 @Component({
-  name: 'a-tag-navigator',
-  template: require('./a-tag-navigator.html'),
+  template,
   components: {
   },
   props: {

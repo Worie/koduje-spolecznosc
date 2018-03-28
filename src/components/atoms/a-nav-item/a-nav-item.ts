@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './a-nav-item.scss'
+import template from './a-nav-item.html'
 
 @Component({
-  name: 'a-nav-item',
-  template: require('./a-nav-item.html'),
+  template,
   components: {
   },
   props: {

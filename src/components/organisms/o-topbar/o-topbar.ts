@@ -2,9 +2,10 @@ import { Component, Vue } from 'vue-property-decorator'
 import './o-topbar.scss'
 import aInput from '../../atoms/a-input'
 
+import template from './o-topbar.html'
+
 @Component({
-  name: 'o-topbar',
-  template: require('./o-topbar.html'),
+  template,
   components: {
     aInput,
   }

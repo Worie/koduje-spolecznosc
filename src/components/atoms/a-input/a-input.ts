@@ -1,9 +1,10 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './a-input.scss'
+import template from './a-input.html'
+
 
 @Component({
-  name: 'a-input',
-  template: require('./a-input.html'),
+  template,
   components: {
   },
   props: {

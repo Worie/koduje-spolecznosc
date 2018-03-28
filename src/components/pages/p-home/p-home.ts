@@ -7,9 +7,10 @@ import oMainContent from '../../organisms/o-main-content'
 
 // it'd be cool if we didnt have to explicitly load those,too
 import './p-home.scss'
+import template from './p-home.html'
 
 @Component({
-  template: require('./p-home.html'),
+  template,
   components: {
     oTopbar,
     oMainContent,
@@ -17,5 +18,5 @@ import './p-home.scss'
   }
 })
 export class pHome extends Vue {
-
+  
 }

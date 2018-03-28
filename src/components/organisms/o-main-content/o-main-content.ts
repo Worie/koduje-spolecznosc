@@ -4,12 +4,12 @@ import { Component, Vue } from 'vue-property-decorator';
 import oSidebar from '../../organisms/o-sidebar';
 import aCard from '../../atoms/a-card';
 import aTagNavigator from '../../atoms/a-tag-navigator';
-
 import './o-main-content.scss';
 
+import template from './o-main-content.html';
+
 @Component({
-  name: 'o-main-content',
-  template: require('./o-main-content.html'),
+  template,
   components: {
     oSidebar,
     aCard,
@@ -107,7 +107,7 @@ export class oMainContent extends Vue {
 
     if (
       (cardFilter === '' && (!typeFilter  || typeFilter == 'all')) ||
-      card.content.includes(cardFilter) ||
+      card.content.indexOf(cardFilter) > -1 ||
       card.keywords.indexOf(cardFilter) > -1
     ) {
       return true;
