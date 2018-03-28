@@ -4,8 +4,7 @@
   "description": "dev setup for kie",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
+    "dev": "webpack-dev-server",
     "prod": "webpack -p"
   },
   "author": "Jakub Maksimowicz",
@@ -27,7 +26,8 @@
     "vue-property-decorator": "^6.0.0",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
     "@types/webpack-env": "^1.13.5",

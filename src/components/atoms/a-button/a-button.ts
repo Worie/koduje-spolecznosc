@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './a-button.scss'
+import template from './a-button.html'
 
 @Component({
-  name: 'a-button',
-  template: './a-button.html',
+  template,
   components: {
   },
   props: {

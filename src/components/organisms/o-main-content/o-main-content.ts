@@ -4,12 +4,12 @@ import { Component, Vue } from 'vue-property-decorator';
 import oSidebar from '../../organisms/o-sidebar';
 import aCard from '../../atoms/a-card';
 import aTagNavigator from '../../atoms/a-tag-navigator';
-
 import './o-main-content.scss';
 
+import template from './o-main-content.html';
+
 @Component({
-  name: 'o-main-content',
-  template: './o-main-content.html',
+  template,
   components: {
     oSidebar,
     aCard,

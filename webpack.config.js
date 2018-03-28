@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/],
@@ -55,6 +55,10 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    port: 8080,
   },
   plugins: [
     new HtmlWebpackPlugin({

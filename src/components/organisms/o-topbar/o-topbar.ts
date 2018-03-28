@@ -5,7 +5,6 @@ import aInput from '../../atoms/a-input'
 import template from './o-topbar.html'
 
 @Component({
-  name: 'o-topbar',
   template,
   components: {
     aInput

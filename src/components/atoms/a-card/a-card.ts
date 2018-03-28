@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './a-card.scss'
+import template from './a-card.html'
 
 @Component({
-  name: 'a-card',
-  template: './a-card.html',
+  template,
   components: {
   },
   props: {

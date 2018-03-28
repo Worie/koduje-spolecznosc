@@ -1,9 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 import './o-footer.scss'
+import template from './o-footer.html'
 
 @Component({
-  name: 'o-footer',
-  template: './o-footer.html',
+  template,
   components: {
   }
 })
