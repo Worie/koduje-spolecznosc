@@ -7,7 +7,7 @@ import template from './o-topbar.html'
 @Component({
   template,
   components: {
-    aInput
+    aInput,
   }
 })
 export class oTopbar extends Vue {
