@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
+
 module.exports = {
   entry: './src/main.ts',
   output: {
@@ -66,6 +69,13 @@ module.exports = {
       hash: false,
       template: './src/index.html',
       filename: './index.html'
+    }),
+    new PrerenderSpaPlugin({
+      staticDir: path.join(__dirname, 'dist'),
+      routes: ['/'],
+      renderer: new Renderer({
+        headless: false,
+      })
     })
   ]
 }
