@@ -74,7 +74,7 @@ module.exports = {
       staticDir: path.join(__dirname, 'dist'),
       routes: ['/'],
       renderer: new Renderer({
-        headless: false,
+        headless: true,
       })
     })
   ]
