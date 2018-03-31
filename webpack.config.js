@@ -13,6 +13,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-multi-loader',
         options: {
@@ -70,12 +74,12 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html'
     }),
-    new PrerenderSpaPlugin({
-      staticDir: path.join(__dirname, 'dist'),
-      routes: ['/'],
-      renderer: new Renderer({
-        headless: true,
-      })
-    })
+    // new PrerenderSpaPlugin({
+    //   staticDir: path.join(__dirname, 'dist'),
+    //   routes: ['/'],
+    //   renderer: new Renderer({
+    //     headless: true,
+    //   })
+    // })
   ]
 }

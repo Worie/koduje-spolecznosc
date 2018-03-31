@@ -1,5 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator'
-import './root.scss'
+import '../../../node_modules/carbon-components/css/carbon-components.css';
 import template from './root.html'
 
 @Component({

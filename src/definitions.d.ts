@@ -3,4 +3,6 @@ declare module "*.vue" {
     export default Vue;
 }
 declare module 'portal-vue';
+declare module 'carbon-components';
 declare module '*.html';
+declare module '*.css';
