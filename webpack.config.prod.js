@@ -13,10 +13,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-multi-loader',
         options: {
@@ -46,7 +42,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [{
           loader: "style-loader"
         }, {
@@ -63,23 +59,31 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    port: 8080,
-  },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
       hash: false,
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      }
     }),
-    // new PrerenderSpaPlugin({
-    //   staticDir: path.join(__dirname, 'dist'),
-    //   routes: ['/'],
-    //   renderer: new Renderer({
-    //     headless: true,
-    //   })
-    // })
+    new PrerenderSpaPlugin({
+      staticDir: path.join(__dirname, 'dist'),
+      routes: ['/'],
+      renderer: new Renderer({
+        headless: true,
+      })
+    })
   ]
 }

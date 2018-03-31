@@ -4,9 +4,8 @@
   "description": "koduje-spolecznosc project",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "prod": "webpack -p",
-    "build": "webpack --progress"
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
+    "prod": "webpack --config webpack.config.prod.js"
   },
   "author": "Jakub Maksimowicz",
   "license": "MIT",
