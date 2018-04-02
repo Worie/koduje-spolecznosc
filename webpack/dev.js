@@ -7,7 +7,7 @@ const baseConfig = require('./base.js');
 
 let a = Object.assign(baseConfig, {
     devServer: {
-      contentBase: path.join(__dirname, "../dist"),
+      contentBase: path.join(__dirname, "./dist"),
       port: 8080,
     },
     plugins: [

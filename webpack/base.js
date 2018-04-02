@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: './src/main.ts',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
   module: {
@@ -51,7 +51,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
-      '@': '../src/',
+      'vue$': 'vue/dist/vue.esm.js'
     }
   },
 }
