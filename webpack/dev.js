@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 
 const baseConfig = require('./base.js');
 
-module.exports = merge(baseConfig, {
+const a = merge(baseConfig, {
   devServer: {
     contentBase: path.join(__dirname, "../dist"),
     port: 8080,
@@ -19,3 +19,5 @@ module.exports = merge(baseConfig, {
     }),
   ]
 })
+console.log(JSON.stringify(a));
+module.exports = a
