@@ -3,11 +3,10 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
-const merge = require('webpack-merge');
 
 const baseConfig = require('./base.js');
 
-module.exports = merge(baseConfig, {
+let p = Object.assign(baseConfig, {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
@@ -36,3 +35,4 @@ module.exports = merge(baseConfig, {
     })
   ]
 })
+module.exports = p;

@@ -21,4 +21,4 @@ let a = Object.assign(baseConfig, {
   })
 
 console.log(JSON.stringify(a));
-module.exports = a;
+module.exports = d;
