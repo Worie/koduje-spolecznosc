@@ -6,7 +6,7 @@ const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 
 const baseConfig = require('./base.js');
 
-let p = Object.assign(baseConfig, {
+module.exports = Object.assign(baseConfig, {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
@@ -35,4 +35,3 @@ let p = Object.assign(baseConfig, {
     })
   ]
 })
-module.exports = p;

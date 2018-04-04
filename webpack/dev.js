@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 
 const baseConfig = require('./base.js');
 
-let a = Object.assign(baseConfig, {
+module.exports = Object.assign(baseConfig, {
     devServer: {
       contentBase: path.join(__dirname, "./dist"),
       port: 8080,
@@ -19,6 +19,3 @@ let a = Object.assign(baseConfig, {
       }),
     ]
   })
-
-console.log(JSON.stringify(a));
-module.exports = d;

@@ -4,7 +4,6 @@ import { Component, Vue } from 'vue-property-decorator';
 import oSidebar from '../../organisms/o-sidebar';
 import aCard from '../../atoms/a-card';
 import aTagNavigator from '../../atoms/a-tag-navigator';
-import cButton from '../../carbon/c-button';
 import './o-main-content.scss';
 
 import template from './o-main-content.html';
@@ -15,7 +14,6 @@ import template from './o-main-content.html';
     oSidebar,
     aCard,
     aTagNavigator,
-    cButton
   }
 })
 export class oMainContent extends Vue {
