@@ -5,12 +5,7 @@ const merge = require('webpack-merge');
 
 const baseConfig = require('./base.js');
 
-module.exports = Object.assign(baseConfig, {
-    devServer: {
-      contentBase: path.join(__dirname, "./dist"),
-      port: 8080,
-    },
-    plugins: [
+baseConfig.plugins = baseConfig.plugins.concat([
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
@@ -18,4 +13,11 @@ module.exports = Object.assign(baseConfig, {
         filename: './index.html'
       }),
     ]
-  })
+)
+
+baseConfig.devServer = {
+  contentBase: path.join(__dirname, "../dist"),
+  port: 8080,
+}
+
+module.exports = baseConfig
