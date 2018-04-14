@@ -6,7 +6,7 @@
 
   @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/Montserrat-Light.otf")
+    src: url("/assets/fonts/Montserrat-Light.otf");
   }
 
   html {
@@ -277,31 +277,31 @@
     }
 
     nav ul li .star-icon::before {
-      background-image: url(/assets/img/star.svg)
+      background-image: url(/assets/img/star.svg);
     }
 
     nav ul li .book-icon::before {
-      background-image: url(/assets/img/book.svg)
+      background-image: url(/assets/img/book.svg);
     }
 
     nav ul li .education-icon::before {
-      background-image: url(/assets/img/education.svg)
+      background-image: url(/assets/img/education.svg);
     }
 
     nav ul li .cool-guy-icon::before {
-      background-image: url(/assets/img/cool-guy.svg)
+      background-image: url(/assets/img/cool-guy.svg);
     }
 
     nav ul li .handshake-icon::before {
-      background-image: url(/assets/img/hand-shake.svg)
+      background-image: url(/assets/img/hand-shake.svg);
     }
 
     nav ul li .globe-icon::before {
-      background-image: url(/assets/img/globe.svg)
+      background-image: url(/assets/img/globe.svg);
     }
 
     nav ul li .video-icon::before {
-      background-image: url(/assets/img/video.svg)
+      background-image: url(/assets/img/video.svg);
     }
 
     .main {

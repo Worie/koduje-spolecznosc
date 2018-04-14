@@ -20,4 +20,4 @@ baseConfig.devServer = {
   port: 8080,
 }
 
-module.exports = baseConfig
+module.exports = baseConfig;
