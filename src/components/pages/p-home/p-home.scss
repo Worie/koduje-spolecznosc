@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Bebas Neue";
     font-weight: bold;
-    // src: url("../fonts/BebasNeue-Bold.otf");
+    src: url("/assets/fonts/BebasNeue-Bold.otf");
   }
 
   @font-face {
     font-family: "Montserrat";
-    // src: url("../fonts/Montserrat-Light.otf")
+    src: url("/assets/fonts/Montserrat-Light.otf");
   }
 
   html {
@@ -57,7 +57,7 @@
     height: 50px;
     width: 200px;
     background-position: center;
-    // background-image: url(../img/front-end-recipes-logo.svg);
+    background-image: url('/assets/img/front-end-recipes-logo.svg');
     background-repeat: no-repeat;
   }
 
@@ -94,7 +94,7 @@
     height: 25px;
     margin-top: 21px;
     margin-left: 10px;
-    // background-image: url('../img/search.svg');
+    background-image: url('/assets/img/search.svg');
     background-size: cover;
     background-position: top;
   }
@@ -129,30 +129,30 @@
   }
 
   .link-icon::after {
-    // background-image: url("../img/link-icon.svg");
+    background-image: url("/assets/img/link-icon.svg");
   }
 
   .icons-wrapper .fb-icon::after {
-    // background-image: url("../img/fb-icon.svg");
+    background-image: url("/assets/img/fb-icon.svg");
   }
 
   .icons-wrapper .twitter-icon::after {
-    // background-image: url("../img/twitter-icon.svg");
+    background-image: url("/assets/img/twitter-icon.svg");
   }
 
   .icons-wrapper .yt-icon::after {
-    // background-image: url("../img/youtube-icon.svg");
+    background-image: url("/assets/img/youtube-icon.svg");
   }
 
   .icons-wrapper .search-icon::after {
-    // background-image: url("../img/search.svg");
+    background-image: url("/assets/img/search.svg");
   }
 
   .tag-icon {
     width: 35px;
     height: 30px;
     margin-top: -8px;
-    // background-image: url("../img/tags.svg");
+    background-image: url("/assets/img/tags.svg");
   }
 
   .v-separator{
@@ -207,6 +207,7 @@
   .copywrite {
     margin: auto;
     color: white;
+    font: 15px 'Montserrat'
   }
 
   .logo-wrapper {
@@ -276,31 +277,31 @@
     }
 
     nav ul li .star-icon::before {
-    //   background-image: url(../img/star.svg)
+      background-image: url(/assets/img/star.svg);
     }
 
     nav ul li .book-icon::before {
-    //   background-image: url(../img/book.svg)
+      background-image: url(/assets/img/book.svg);
     }
 
     nav ul li .education-icon::before {
-    //   background-image: url(../img/education.svg)
+      background-image: url(/assets/img/education.svg);
     }
 
     nav ul li .cool-guy-icon::before {
-    //   background-image: url(../img/cool-guy.svg)
+      background-image: url(/assets/img/cool-guy.svg);
     }
 
     nav ul li .handshake-icon::before {
-    //   background-image: url(../img/hand-shake.svg)
+      background-image: url(/assets/img/hand-shake.svg);
     }
 
     nav ul li .globe-icon::before {
-    //   background-image: url(../img/globe.svg)
+      background-image: url(/assets/img/globe.svg);
     }
 
     nav ul li .video-icon::before {
-    //   background-image: url(../img/video.svg)
+      background-image: url(/assets/img/video.svg);
     }
 
     .main {

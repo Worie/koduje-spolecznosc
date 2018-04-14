@@ -1,23 +1,19 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack')
-const PrerenderSpaPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
+const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/main.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, '../dist'),
+    filename: 'bundle.js',
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
         loader: 'vue-multi-loader',
         options: {
-          loaders: {
-          }
+          loaders: {}
           // other vue-loader options go here
         }
       },
@@ -42,7 +38,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [{
           loader: "style-loader"
         }, {
@@ -59,23 +55,10 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    port: 8080,
-  },
   plugins: [
-    new HtmlWebpackPlugin({
-      inject: true,
-      hash: false,
-      template: './src/index.html',
-      filename: './index.html'
-    }),
-    new PrerenderSpaPlugin({
-      staticDir: path.join(__dirname, 'dist'),
-      routes: ['/'],
-      renderer: new Renderer({
-        headless: true,
-      })
-    })
+    new CopyWebpackPlugin([{
+      from: 'src/assets/',
+      to: 'assets/'
+    }]),
   ]
 }
