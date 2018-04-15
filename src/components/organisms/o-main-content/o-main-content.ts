@@ -8,6 +8,8 @@ import './o-main-content.scss';
 
 import template from './o-main-content.html';
 
+const injectData = require('../../../../injectData.json');
+
 @Component({
   template,
   components: {
@@ -18,41 +20,7 @@ import template from './o-main-content.html';
 })
 export class oMainContent extends Vue {
   get entries(): ICard[] {
-    return [{
-      keywords: ['html', 'css', 'js'],
-      type: 'people',
-      content: 'Wojtusiek'
-    },
-    {
-      keywords: ['html', 'css'],
-      type: 'people',
-      content: 'Nie wojtuśiek'
-    },
-    {
-      keywords: ['html', 'css', 'js'],
-      type: 'people',
-      content: 'Jakub'
-    },
-    {
-      keywords: ['html', 'css'],
-      type: 'books',
-      content: 'Damian ksiązka'
-    },
-    {
-      keywords: ['css'],
-      type: 'books',
-      content: 'flexbox wojt'
-    },
-    {
-      keywords: ['html', 'css', 'js'],
-      type: 'sources',
-      content: 'Comandeer strona'
-    },
-    {
-      keywords: ['js'],
-      type: 'conferences',
-      content: 'YDKJS 2016'
-    }];
+    return injectData.cards;
   }
 
   get tags(): ITag[] {
