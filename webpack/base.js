@@ -3,10 +3,14 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/main.ts',
+  entry: {
+    main: './src/main.ts',
+    sw: './src/sw.ts',
+  },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
+    chunkFilename: '[id].[chunkhash].js',
   },
   module: {
     rules: [{
